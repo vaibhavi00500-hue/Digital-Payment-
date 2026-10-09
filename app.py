@@ -52,7 +52,7 @@ long["weekday"] = long["date"].dt.day_name()
 # ----------------------------------------------------------------------------
 # 2. HEADER + SIDEBAR FILTERS
 # ----------------------------------------------------------------------------
-st.title("💳 FinTech Digital Payment Transaction Analytics")
+st.title("FinTech Digital Payment Transaction Analytics")
 st.caption("Source: RBI payment statistics via India Data Portal  |  Volumes in lakh transactions, values in ₹ crore "
            "(daily sheet)  |  Aggregated system data, not individual customer records")
 
@@ -92,8 +92,8 @@ if len(yr_ago):
 else:
     k5.metric("UPI volume growth YoY", "n/a (range too short)")
 
-tabs = st.tabs(["📊 Overview", "💳 Methods & Ticket Size", "🕒 Timing & Stress Signals",
-                "🏦 Bank-wise View", "💡 Insights & Actions", "🧹 Data Quality"])
+tabs = st.tabs(["Overview", "Methods & Ticket Size", "Timing & Stress Signals",
+                "Bank-wise View", "Insights & Actions", "Data Quality"])
 
 # ----------------------------------------------------------------------------
 # TAB 1  OVERVIEW  - "What is happening in the business?"

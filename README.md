@@ -1,4 +1,4 @@
-# 💳 FinTech Digital Payment Transaction Analytics
+# FinTech Digital Payment Transaction Analytics
 
 CA4 Capstone – Business Analytics (IBA, 5th Sem) · Python + Pandas + Plotly + Streamlit
 

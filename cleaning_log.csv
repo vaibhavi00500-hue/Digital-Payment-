@@ -1,0 +1,11 @@
+Sheet,Issue found,Action taken,Rows/months affected
+01_Daily_Payments,Missing calendar days in the series,Left as is (not interpolated); charts skip them,2
+01_Daily_Payments,Blank RTGS/NACH/CTS on weekends & bank holidays (these systems are closed),"Kept as NaN, NOT filled with 0 - blank means 'system closed', not 'zero payments'",44
+02_Mobile_Banking,"Same ['month', 'bank_name'] appears more than once (mostly the swapped-date copies)","Kept first row, dropped the rest",167
+02_Mobile_Banking,"Amount per transaction jumps ~100x in some months (unit change): May-2013, Jul-2025, Oct-2025, Nov-2025, Dec-2025",Divided those months' amounts by 100,5
+03_Internet_Banking,Month stored with day/month swapped (day != 1),Swapped back to 1st-of-month date,4517
+03_Internet_Banking,"Same ['month', 'bank_name'] appears more than once (mostly the swapped-date copies)","Kept first row, dropped the rest",4815
+04_NEFT,Month stored with day/month swapped (day != 1),Swapped back to 1st-of-month date,33443
+04_NEFT,"Same ['month', 'bank_name'] appears more than once (mostly the swapped-date copies)","Kept first row, dropped the rest",36437
+04_NEFT,"Months with no data at all: May-2009, Nov-2009, Dec-2009",Left as gaps,3
+05_Bankwise_ATM_POS_Card,"Same ['date', 'bank_name'] appears more than once (mostly the swapped-date copies)","Kept first row, dropped the rest",0

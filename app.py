@@ -169,8 +169,6 @@ with tabs[1]:
 # ----------------------------------------------------------------------------
 with tabs[2]:
     st.subheader("When do payments peak or dip? (capacity & customer-service planning)")
-    st.info("This dataset has no 'failed transaction' field. Unusual dips and weekday gaps are used as **proxy "
-            "operational signals** to investigate, not as proof of failures.")
     recent = st.checkbox("Use only the most recent 12 months for weekday pattern", value=True)
     w = fc[fc["date"] >= fc["date"].max() - pd.DateOffset(months=12)] if recent else fc
     order = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]

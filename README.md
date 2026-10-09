@@ -2,7 +2,7 @@
 
 CA4 Capstone – Business Analytics (IBA, 5th Sem) · Python + Pandas + Plotly + Streamlit
 
-**Live app:** _paste your Streamlit link here_
+**Live app:** https://javx9uyjhojspyp4jetnva.streamlit.app/
 
 ## Business problem
 A digital-payment company wants to understand transaction volumes, payment methods, transaction values,
@@ -16,7 +16,6 @@ RBI payment statistics published through the **India Data Portal** (Reserve Bank
 4. NEFT Transaction Metrics (bank-wise, monthly) – 2008 to 2025
 5. Bank-wise ATM / POS / Card statistics – 2022 to 2025
 
-Source link: _paste the exact India Data Portal page links you used for each sheet here._
 Raw file: `data/RBI_Digital_Payments_Capstone_Cleaned.xlsx`
 
 **Limitations (stated openly):** the data is aggregated system data, not individual transactions. It has
@@ -49,6 +48,3 @@ streamlit run app.py
 
 ## Tech
 Python, Pandas, NumPy, Plotly, Streamlit, GitHub.
-
-## Author
-_Your name(s), roll number(s)_

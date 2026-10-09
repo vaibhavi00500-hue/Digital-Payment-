@@ -342,7 +342,7 @@ with tabs[5]:
     st.subheader("Data cleaning log")
     st.dataframe(clean_log, hide_index=True, width="stretch")
     st.markdown("""
-**Limitations to keep in mind**
+**Limitations**
 - The data is aggregated, system-level RBI statistics, not individual customer transactions.
 - There is **no failed/declined-transaction field and no geographic field**. Failure patterns are approached through proxy signals (unusual dips, weekday gaps) and location through bank / bank category.
 - Daily sheet: volumes are in lakh, values in ₹ crore. Bank-wise sheets use the source's own units; they are used for shares, ratios and trends, not for absolute rupee claims.

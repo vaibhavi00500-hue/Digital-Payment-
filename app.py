@@ -13,7 +13,7 @@ st.set_page_config(page_title="Digital Payments Analytics", page_icon="💳", la
 # ----------------------------------------------------------------------------
 # 1. LOAD DATA (cached so the app stays fast)
 # ----------------------------------------------------------------------------
-CLEAN = "data/clean/"
+CLEAN = ""
 
 # name shown on screen -> column prefix in the daily sheet
 METHODS = {

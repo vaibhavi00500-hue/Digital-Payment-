@@ -212,7 +212,6 @@ with tabs[2]:
 # ----------------------------------------------------------------------------
 with tabs[3]:
     st.subheader("Which banks carry the volume? Where is engagement weak?")
-    st.info("The data has no city/state field. **Bank / bank-category** is used as the 'where' dimension.")
     channel = st.selectbox("Channel", ["Mobile banking", "Internet banking", "NEFT - debit side", "NEFT - credit side"])
     if channel == "Mobile banking":
         df, ncol, acol, ucol = mob, "no_of_transactions", "amt_of_transactions", "active_customers"
